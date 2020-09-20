@@ -15,6 +15,10 @@
 		43DEF66B2512310A00B2626E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DEF6692512310A00B2626E /* LaunchScreen.storyboard */; };
 		43DEF6762512310A00B2626E /* LaboAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DEF6752512310A00B2626E /* LaboAPITests.swift */; };
 		43DEF6812512310A00B2626E /* LaboAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DEF6802512310A00B2626E /* LaboAPIUITests.swift */; };
+		43DEF691251232C900B2626E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DEF690251232C900B2626E /* TableViewCell.swift */; };
+		43DEF693251233A800B2626E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DEF692251233A800B2626E /* TableViewController.swift */; };
+		43DEF695251239FE00B2626E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DEF694251239FE00B2626E /* NetworkService.swift */; };
+		43DEF69725124AF700B2626E /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DEF69625124AF700B2626E /* Games.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		43DEF67C2512310A00B2626E /* LaboAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaboAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DEF6802512310A00B2626E /* LaboAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboAPIUITests.swift; sourceTree = "<group>"; };
 		43DEF6822512310A00B2626E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43DEF690251232C900B2626E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		43DEF692251233A800B2626E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		43DEF694251239FE00B2626E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		43DEF69625124AF700B2626E /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +107,15 @@
 		43DEF65D2512310600B2626E /* LaboAPI */ = {
 			isa = PBXGroup;
 			children = (
+				43DEF68F2512329500B2626E /* Views */,
+				43DEF68E2512318200B2626E /* Modal */,
 				43DEF65E2512310600B2626E /* AppDelegate.swift */,
 				43DEF6602512310600B2626E /* SceneDelegate.swift */,
-				43DEF6622512310600B2626E /* ViewController.swift */,
 				43DEF6642512310600B2626E /* Main.storyboard */,
 				43DEF6672512310A00B2626E /* Assets.xcassets */,
 				43DEF6692512310A00B2626E /* LaunchScreen.storyboard */,
 				43DEF66C2512310A00B2626E /* Info.plist */,
+				43DEF694251239FE00B2626E /* NetworkService.swift */,
 			);
 			path = LaboAPI;
 			sourceTree = "<group>";
@@ -126,6 +136,24 @@
 				43DEF6822512310A00B2626E /* Info.plist */,
 			);
 			path = LaboAPIUITests;
+			sourceTree = "<group>";
+		};
+		43DEF68E2512318200B2626E /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				43DEF69625124AF700B2626E /* Games.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		43DEF68F2512329500B2626E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43DEF6622512310600B2626E /* ViewController.swift */,
+				43DEF690251232C900B2626E /* TableViewCell.swift */,
+				43DEF692251233A800B2626E /* TableViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				43DEF6632512310600B2626E /* ViewController.swift in Sources */,
+				43DEF691251232C900B2626E /* TableViewCell.swift in Sources */,
 				43DEF65F2512310600B2626E /* AppDelegate.swift in Sources */,
+				43DEF69725124AF700B2626E /* Games.swift in Sources */,
+				43DEF695251239FE00B2626E /* NetworkService.swift in Sources */,
+				43DEF693251233A800B2626E /* TableViewController.swift in Sources */,
 				43DEF6612512310600B2626E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
